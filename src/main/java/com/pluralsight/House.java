@@ -47,7 +47,24 @@ public class House extends Asset{
     }
 
     @Override
-    getValue(){
-
+    public double getValue() {
+        double squareFootValue;
+        switch (condition) {
+            case 1:
+                squareFootValue = 180.00;
+                break;
+            case 2:
+                squareFootValue = 130.00;
+                break;
+            case 3:
+                squareFootValue = 90.00;
+                break;
+            case 4:
+                squareFootValue = 80.00;
+                break;
+            default:
+                squareFootValue = 0.00;
+        }
+        return (squareFoot * squareFootValue + 0.25 * lotSize);
     }
 }
