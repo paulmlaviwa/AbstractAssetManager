@@ -10,7 +10,7 @@ public class AssetManager {
         assets.add(new House("Vacation Home", "2018-05-10", 250000, "2627 Pembroke Rd", 2, 1500, 7500));
         assets.add(new Vehicle("Tom's Truck", "2019-08-20", 25000, "Ford F-150", 2018, 45000));
         assets.add(new Vehicle("My Car", "2022-03-05", 35000, "Chevrolet Sonic", 2020, 20000));
-
+        assets.add(new Vehicle("Joy's car", "2022-07-26", 600, "Chevrolet Silverado", 2022, 100));
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
             System.out.println("Date Acquired: " + asset.getDateAcquired());
