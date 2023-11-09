@@ -11,6 +11,8 @@ public class AssetManager {
         assets.add(new Vehicle("Tom's Truck", "2019-08-20", 25000, "Ford F-150", 2018, 45000));
         assets.add(new Vehicle("My Car", "2022-03-05", 35000, "Chevrolet Sonic", 2020, 20000));
         assets.add(new Vehicle("Joy's car", "2022-07-26", 600, "Chevrolet Silverado", 2022, 100));
+        assets.add(new Cash("My October Savings", "2023-10-01", 100));
+
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
             System.out.println("Date Acquired: " + asset.getDateAcquired());
